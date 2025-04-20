@@ -1,0 +1,82 @@
+
+ul{
+	position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+	display: flex;
+	width: 100%;
+	height: auto;
+	margin: auto;
+     -webkit-backdrop-filter: opacity(20%);
+     backdrop-filter: blur(4px);
+	 min-width: 1000px;
+	 min-height: 20px;
+	 
+}
+li {
+ 	
+  padding: 1rem 2rem 1.15rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: black;
+  min-width: 80px;
+  min-height: 100px;
+  margin: auto;
+
+}
+
+li.ex1:hover {
+  background-image: url('../img/Button1.gif');
+  background-size: 100% 100%;
+  color: white;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #4287f5;
+  font-weight: bold;
+
+}
+
+li.ex2:hover {
+  background-image: url('../img/Button2.gif');
+  background-size: 100% 100%;
+  color: white;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #4287f5;
+  font-weight: bold;
+
+}
+
+li.ex3:hover {
+  background-image: url('../img/Button3.gif');
+  background-size: 100% 100%;
+  color: white;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #4287f5;
+  font-weight: bold;
+
+}
+
+li.ex4:hover {
+  background-image: url('../img/Button4.gif');
+  background-size: 100% 100%;
+  color: white;
+  animation: spring 300ms ease-out;
+  text-shadow: 0 -1px 0 #4287f5;
+  font-weight: bold;
+
+}
+
+li:active {
+    transform: translateY(-50%);
+	delay: 300ms;
+}
+
+@keyframes spring {
+
+  from {
+    transform: translateY(-50%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+

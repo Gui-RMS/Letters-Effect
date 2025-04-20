@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Letters Effect</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/Style.css">
+<link rel="stylesheet" href="css/Navbar.css">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+<!-- First Parallax Image with Logo Text -->
+
+
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<ul>
+	<li onclick="location.href = 'index.html';"class="ex1 w3-animate-opacity"> Inicio </li>
+	<li onclick="location.href = 'sobre.html';" class="ex2 w3-animate-opacity"> Sobre  </li>
+	<li onclick="location.href = 'equipe.html';" class="ex3 w3-animate-opacity"> Equipe </li>
+	<li onclick="location.href = 'login.php';" class="ex4 w3-animate-opacity"> Login </li>
+</ul>
+  <div class="w3-display-middle" style="white-space:nowrap;">
+   <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">  
+   <div class="loader">Letters&nbsp</div> 
+	<div class="loader2">Effect:</div> 
+	<div class="loader3">&nbspRoads</div></span> 
+
+  </div>
+</div>
+
+
+<script>
+const d = new Date();
+hour = d.getHours();
+
+if (hour > 6 && hour <= 12) {
+classback = document.getElementById("home");
+classback.classList.remove(".tm-section-1");
+classback.classList.add(".tm-section-1");
+
+var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "songs/Manha.mp3"
+audio.volume = 0.2;
+document.body.addEventListener("mousemove", function () {
+audio.play()
+})
+}
+
+else if (hour > 12 && hour <= 18) {
+classback = document.getElementById("home");
+classback.classList.remove(".tm-section-1");
+classback.classList.add(".tm-section-0");
+
+var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "songs/tarde.mp3"
+audio.volume = 0.2;
+document.body.addEventListener("mousemove", function () {
+audio.play()
+})
+}
+
+else{
+classback = document.getElementById("home");
+classback.classList.remove(".tm-section-1");
+classback.classList.add(".tm-section-2");
+
+var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "songs/noite.mp3"
+audio.volume = 0.2;
+document.body.addEventListener("mousemove", function () {
+audio.play()
+})
+}
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,224 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #d0d0d0;
+  line-height: 1.8;
+   overflow: hidden;
+
+}
+
+.w3-display-middle {
+    display: flex;
+}
+
+.w3-black, .w3-hover-black:hover {
+       display: flex;
+}	
+.loader {
+   flex-wrap: nowrap;
+  --w:128px;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  letter-spacing: var(--w);
+  width:var(--w);
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0, 
+    calc(-3*var(--w)) 0, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0, 
+    calc(-9*var(--w)) 0;
+  animation: l16 2s infinite;
+}
+
+@keyframes l16 {
+  20% {text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0 red, 
+    calc(-3*var(--w)) 0, 
+    calc(-4*var(--w)) 0 #ffa516,
+    calc(-5*var(--w)) 0 #63fff4, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0 green, 
+    calc(-9*var(--w)) 0;}
+  40% {text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0 red, 
+    calc(-3*var(--w)) 0 #e945e9, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0 green, 
+    calc(-6*var(--w)) 0 orange, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0 green, 
+    calc(-9*var(--w)) 0;}
+  60% {text-shadow: 
+    calc(-1*var(--w)) 0 lightblue, 
+    calc(-2*var(--w)) 0, 
+    calc(-3*var(--w)) 0 #e945e9, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0 green, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0 yellow, 
+    calc(-8*var(--w)) 0 #ffa516, 
+    calc(-9*var(--w)) 0 red;}
+  80% {text-shadow: 
+    calc(-1*var(--w)) 0 lightblue, 
+    calc(-2*var(--w)) 0 yellow, 
+    calc(-3*var(--w)) 0 #63fff4, 
+    calc(-4*var(--w)) 0 #ffa516,
+    calc(-5*var(--w)) 0 red, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0 grey, 
+    calc(-8*var(--w)) 0 #63fff4, 
+    calc(-9*var(--w)) 0 ;}
+}
+
+
+.loader2 {
+	--w:0px;
+  letter-spacing: var(--w);
+  width: fit-content;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  color:#0000;
+  background:linear-gradient(90deg,#d0d0d0 calc(50% - 0.5ch),#C02942 0 calc(50% + 0.5ch),#d0d0d0 0) right/calc(200% + 1ch) 100%;
+  -webkit-background-clip:text;
+          background-clip:text;
+  animation: l8 2s infinite steps(11);
+}
+
+.loader3 {
+  --w:108px;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 30px;
+  letter-spacing: var(--w);
+  width:var(--w);
+  overflow: hidden;
+  white-space: nowrap;
+  text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0, 
+    calc(-3*var(--w)) 0, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0, 
+    calc(-9*var(--w)) 0;
+  animation: l16 2s infinite;
+}
+@keyframes l16 {
+  20% {text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0 red, 
+    calc(-3*var(--w)) 0, 
+    calc(-4*var(--w)) 0 #ffa516,
+    calc(-5*var(--w)) 0 #63fff4, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0 green, 
+    calc(-9*var(--w)) 0;}
+  40% {text-shadow: 
+    calc(-1*var(--w)) 0, 
+    calc(-2*var(--w)) 0 red, 
+    calc(-3*var(--w)) 0 #e945e9, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0 green, 
+    calc(-6*var(--w)) 0 orange, 
+    calc(-7*var(--w)) 0, 
+    calc(-8*var(--w)) 0 green, 
+    calc(-9*var(--w)) 0;}
+  60% {text-shadow: 
+    calc(-1*var(--w)) 0 lightblue, 
+    calc(-2*var(--w)) 0, 
+    calc(-3*var(--w)) 0 #e945e9, 
+    calc(-4*var(--w)) 0,
+    calc(-5*var(--w)) 0 green, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0 yellow, 
+    calc(-8*var(--w)) 0 #ffa516, 
+    calc(-9*var(--w)) 0 red;}
+  80% {text-shadow: 
+    calc(-1*var(--w)) 0 lightblue, 
+    calc(-2*var(--w)) 0 yellow, 
+    calc(-3*var(--w)) 0 #63fff4, 
+    calc(-4*var(--w)) 0 #ffa516,
+    calc(-5*var(--w)) 0 red, 
+    calc(-6*var(--w)) 0, 
+    calc(-7*var(--w)) 0 grey, 
+    calc(-8*var(--w)) 0 #63fff4, 
+    calc(-9*var(--w)) 0 ;}
+}
+
+
+@keyframes l24{
+  100%{background-position: left}
+}
+
+@keyframes l8 {to{background-position: left}}
+
+
+@keyframes l10 {
+  25% {background-position: calc(1*100%/3) 0}
+  50% {background-position: calc(2*100%/3) 0}
+  75% {background-position: calc(3*100%/3) 0}
+  100%{background-position: calc(4*100%/3) 0}
+}
+
+@keyframes l22{
+  100%{background-position: left}
+}
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../img/classe1.gif');
+  height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url('../img/classe2.gif');
+  height: 100%;
+}
+
+.bgimg-3 {
+  background-image: url('../img/classe3.gif');
+  height: 100%;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: black;
+}

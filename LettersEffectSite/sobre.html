@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap2.min.css">
+	<link rel="stylesheet" href="css/Navbar.css">
+    <link rel="stylesheet" href="css/tooplate-style.css">
+	
+    <title>Letters Effect</title>
+
+</head>
+
+
+<script>
+const d = new Date();
+hour = d.getHours();
+
+if (hour > 6 && hour <= 12) {
+classback = document.getElementById("home");
+classback.classList.remove("bgimg-0");
+classback.classList.add("bgimg-0");
+
+var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "songs/Manha.mp3"
+audio.volume = 0.2;
+document.body.addEventListener("mousemove", function () {
+audio.play()
+})
+}
+
+else if (hour > 12 && hour <= 18) {
+classback = document.getElementById("home");
+classback.classList.remove("bgimg-0");
+classback.classList.add("bgimg-1");
+
+var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "songs/tarde.mp3"
+audio.volume = 0.2;
+document.body.addEventListener("mousemove", function () {
+audio.play()
+})
+}
+
+else{
+classback = document.getElementById("home");
+classback.classList.remove("bgimg-0");
+classback.classList.add("bgimg-2");
+
+var audio = document.createElement("AUDIO")
+document.body.appendChild(audio);
+audio.src = "songs/noite.mp3"
+audio.volume = 0.2;
+document.body.addEventListener("mousemove", function () {
+audio.play()
+})
+}
+
+</script>
+
+<body>
+
+    <div class="tm-container mx-auto">
+	
+        <section class="tm-section tm-section-0" id="home">
+			<ul>
+			<li onclick="location.href = 'index.html';"class="ex1 w3-animate-opacity"> Inicio </li>
+			<li onclick="location.href = 'sobre.html';" class="ex2 w3-animate-opacity"> Sobre  </li>
+			<li onclick="location.href = 'equipe.html';" class="ex3 w3-animate-opacity"> Equipe </li>
+			<li onclick="location.href = 'login.php';" class="ex4 w3-animate-opacity"> Login </li>
+			</ul>
+            <div class="container">
+                <div class="row">
+		
+                    <div class="col-sm-12">
+                        <div class="tm-bg-circle-white tm-flex-center-v">
+                            <header class="text-center">
+                                <h1 class="tm-site-title">Letters Effect</h1>
+                                <p class="tm-site-subtitle">Alfabetização, Gamificação Educacional, Jogos Interativos, Habilidades Linguísticas.	</p>
+                            </header>
+                            <p>um jogo educativo desenvolvido para apoiar o aprendizado do alfabeto e habilidades oratórias em crianças, alinhado com o ODS 4.6 sobre alfabetização universal.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tm-section-2" class="tm-section pt-2 pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-5 col-lg-6 tm-flex-center-v tm-text-container tm-section-left">
+                        <h2 class="tm-color-secondary mb-4">Educação de qualidade</h2>
+                        <p class="mb-4">O "Letters Effect Research" tem potencial para melhorar a alfabetização ao proporcionar uma abordagem interativa e atraente ao ensino do alfabeto e habilidades oratórias. A implementação e avaliação em ambientes escolares são passos cruciais para validar sua eficácia e adaptabilidade.</p>
+                    </div>
+                    <div class="col-xl-7 col-lg-6 tm-circle-img-container">
+                        <img src="img/img1.gif" alt="Image" class="rounded-circle tm-circle-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="tm-section-3" class="tm-section tm-section-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 tm-section-2-right">
+                       
+                </div>
+            </div>
+        </section>
+       
+                    <div class="tm-circle-img-container">
+                        <center> <img src="img/submit.gif" alt="Image" class=" tm-circle-img"><BR><BR> <button> Download </button> </center>
+                    </div>
+             
+        <footer class="container">
+            <div class="row">
+
+            </div>
+        </footer>
+    </div>
+    <script src="js/smooth-scroll.polyfills.min.js"></script>
+    <!-- https://github.com/cferdinandi/smooth-scroll -->
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            easing: 'easeInOutQuart',
+            speed: 800
+        });
+    </script>
+</body>
+</html>
